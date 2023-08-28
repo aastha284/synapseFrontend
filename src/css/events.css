@@ -1,0 +1,121 @@
+.events_main_div {
+  width: 100%;
+  height: 750px;
+  background-color: #1b154e;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.events_div2 {
+  padding-top: 6.5vh;
+  width: 100%;
+}
+
+.events_div1 {
+  display: flex;
+  width: 550px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  margin-top: 20vh;
+}
+
+.text3 {
+  color: #fff;
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: monospace;
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 61px; /* 127.083% */
+  letter-spacing: 6.24px;
+  width: 500px;
+  height: 85px;
+  flex-shrink: 0;
+  padding: 0vh 0vh 0vh 14vh;
+}
+
+.text4 {
+  color: #fff;
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: monospace;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 25px; /* 127.083% */
+  letter-spacing: 3px;
+  width: 450px;
+  height: 499px;
+  flex-shrink: 0;
+  padding: 0vh 0vh 0vh 15vh;
+}
+
+.crowd1 {
+  width: 100%;
+  height: 700px;
+}
+
+.events_main_div2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.inner_div2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  min-height: 65vh;
+}
+
+.events-img {
+  width: 400px;
+  height: 400px;
+  margin: 5vh 0vh 0vh 12vh;
+  border-radius: 14px;
+  object-fit: cover;
+  display: block;
+}
+
+.events_image_container {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 78%;
+  left: 35.2%;
+  width: 80%;
+  height: 30%;
+  transform: translate(-20%, -30%);
+  padding: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  backdrop-filter: blur(8px); /* Apply blur effect */
+  border-radius: 10px;
+  text-align: left;
+}
+
+.text-overlay p {
+  text-transform: uppercase;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.button {
+  padding: 15px 25px;
+  background-color: rgba(0, 0, 0, 0.3); /* Less colored background */
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  backdrop-filter: blur(10px); /* Apply a slightly stronger blur */
+  font-size: medium;
+}

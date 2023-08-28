@@ -1,0 +1,69 @@
+*, *::after, *::before{
+    margin: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #1B154E;
+    height: 15vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:100;
+}
+
+.nav_logo{
+    margin-left: -100px;
+}
+.nav_menu{
+    display: flex;
+    margin-right: -400px;
+}
+.nav_item{
+    padding: 2rem;
+    font-family: monospace;
+    font-size: 1.2rem;
+}
+.nav_btn{
+    margin-right: -150px;
+    font-family: monospace;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: .1em .6em;
+    font-weight: bold;  
+    border: none;
+    border-radius: 5px;
+    color:#fff;
+    height: 50px;
+
+    --c:  #229091; /* the color*/
+    box-shadow: 0 0 0 .1em inset var(--c); 
+    --_g: linear-gradient(var(--c) 0 0) no-repeat;
+    background: 
+        var(--_g) calc(var(--_p,0%) - 100%) 0%,
+        var(--_g) calc(200% - var(--_p,0%)) 0%,
+        var(--_g) calc(var(--_p,0%) - 100%) 100%,
+        var(--_g) calc(200% - var(--_p,0%)) 100%;
+    background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+    outline-offset: .1em;
+    transition: background-size .4s, background-position 0s .4s;
+}
+
+.nav_btn:hover {
+  --_p: 100%;
+  transition: background-position .4s, background-size 0s;
+}
+.nav_btn:active {
+  box-shadow: 0 0 9e9q inset #0009; 
+  background-color: var(--c);
+  color: #fff;
+}
